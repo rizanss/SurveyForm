@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <header>
+        <img src="logo_bemfsaintek-removebg-preview.png" alt="logo_b-fsaintek">
+        <h1 id="title">BEM F-SAINTEK Survey Form</h1>
+        <p id="description">Terima kasih telah menolong kami dengan meluangkan waktu untuk mengisi formulir survey ini</p>
+    </header>
+    <form id="survey-form">
+        <label for="name" id="name-label">Nama<input type="text" id="name" placeholder="Masukkan nama anda" required></label> 
+        <label for="email" id="email-label">Email<input type="email" id="email" placeholder="Masukkan email anda"></label> 
+        <label for="number" id="number-label">Umur<input type="number" id="number" min="10" max="50" placeholder="Umur"></label> 
+        <label for="">Jenis Kelamin <br>
+            <input class="inline" type="radio" value="pria" name="gender" id="pria">Pria <br>
+            <input class="inline" type="radio" value="wanita" name="gender" id="wanita">Wanita
+        </label>
+        <label for="dropdown">Program Studi
+            <select id="dropdown" name="dropdown">
+                <option selected disabled>Pilih program studi</option>
+                <option value="1">Teknik Informatika</option>
+                <option value="2">Teknik Sipil</option>
+                <option value="3">Teknik Kimia</option>
+            </select>
+        </label>
+        <label>Program Kerja mana yang paling anda sukai? <br>
+            <input class="inline" type="checkbox" value="upgrading">Upgrading <br>
+            <input class="inline" type="checkbox" value="sitasma">SITASMA <br>
+            <input class="inline" type="checkbox" value="hero-saintek">Hero Saintek <br>
+            <input class="inline" type="checkbox" value="konsolidasi">Konsolidasi <br>
+        </label>
+        <label for="krisar">Silahkan masukkan kritik dan saran
+            <textarea name="krisar" id="krisar" cols="40" rows="7" placeholder="Silahkan masukkan kritik dan saran anda disini..."></textarea>
+        </label>
+        <input type="submit" id="submit" value="Submit">
+    </form>
+</body>
+</html>
